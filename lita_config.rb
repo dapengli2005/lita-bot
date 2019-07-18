@@ -20,7 +20,7 @@ Lita.configure do |config|
 
   if ENV.fetch('RACK_ENV', 'development') == 'production'
     config.robot.adapter = :slack
-    config.redis[:url] = ENV.fetch('REDIS_URL')
+    #config.redis[:url] = ENV.fetch('REDIS_URL')
     config.adapters.slack.token = ENV.fetch('SLACK_TOKEN')
   else
     config.robot.adapter = :shell
