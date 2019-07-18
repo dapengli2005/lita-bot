@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+ruby '2.6.3'
 
 gem "lita"
 gem 'dp-test-lita-doubler', require: 'lita-doubler'
