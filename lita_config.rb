@@ -26,6 +26,8 @@ Lita.configure do |config|
     config.robot.adapter = :shell
   end
 
+  config.http.port = ENV.fetch('PORT')
+
 
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
